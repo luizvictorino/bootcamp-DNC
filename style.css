@@ -14,6 +14,12 @@
     font-family: 'inter';
 }
 
+body {
+    background: linear-gradient(180deg, rgba(12,1112,242,0.5) 19.91%, rgba(12,112,242,0) 24.84%), var(--primary-color);
+    background-repeat: no-repeat;
+}
+
+/* Seção menu */
 #principal {
     width: 100%;
     height: 100px;
@@ -54,4 +60,34 @@
 
         box-shadow: 3px 2px 4px #0C70F2;
         cursor: pointer;
+    }
+
+/* Seção Principal  */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 100px 0;
+}
+
+    header h1{
+        text-transform: uppercase;
+        font-size: 80px;
+        font-weight: 800;
+        text-align: center;
+
+        margin-bottom: 20px;
+    }
+
+    header h2{
+        text-align: center;
+        font-size: 40px;
+
+        margin-bottom: 100px;
+    }
+
+    header .invert {
+        background-color: black;
+        padding: 2px;
     }
