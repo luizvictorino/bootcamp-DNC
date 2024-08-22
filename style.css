@@ -148,3 +148,30 @@ form {
             box-shadow: 0 6px 4px rgba(12,112,242,0.25);
             cursor: pointer;
         }
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+    footer .linha1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        footer ul,
+        footer .linha1 h5,
+        footer .linha2{
+            list-style: none;
+            text-align: center;
+        }
+
+        footer ul li {
+            
+        }
+
+    footer .linha2 {
+
+    }
