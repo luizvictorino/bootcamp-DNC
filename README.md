@@ -14,7 +14,7 @@ O contexto da pagina **`Bootcamp DNC`** seria para capturar os iteresses dos usu
 O principal objetivo desta página é servir para a prática dos conceitos **`front-end`**. Montagen e organização do `HTML` e estilização e responsividade com `CSS`.
 
 ## 👀 Demonstração
-Quer dar uma espiadinha na página? Confira a versão clicando [aqui](https://luizvictorino.github.io/bootcamp-DNC/))! Veja como ela se adapta a diferentes dispositivos e oferece uma navegação suave e agradável. 🌐
+Quer dar uma espiadinha na página? Confira a versão clicando [aqui](https://luizvictorino.github.io/bootcamp-DNC/)! Veja como ela se adapta a diferentes dispositivos e oferece uma navegação suave e agradável. 🌐
 
 ## 💡 Funcionalidades
 * `Design Responsivo`: Ajusta-se perfeitamente a qualquer dispositivo, garantindo uma ótima experiência visual.
