@@ -15,254 +15,218 @@
 }
 
 body {
-    background: linear-gradient(180deg, #0C70F2
-    21.35%, var(--primary-color) 33.84%), var(--primary-color);
+    background: linear-gradient(180deg, #0C70F2 21.35%, var(--primary-color) 28.84%), var(--primary-color);
     background-repeat: no-repeat;
 }
 
-/* Seção menu */
+/* Menu Section */
 #principal {
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background-color: var(--primary-color);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #bababa;
 }
 
-    #menu a {
-        font-size: 25px;
-        font-weight: 600;
-    }
-        
-    #menu a:hover {
-        color: #cccccc;
-    }
+#menu a {
+    font-size: 25px;
+    font-weight: 600;
+}
 
-    #menu {
-        display: flex;
-        width: 50%;
-        justify-content: space-around;
-        align-items: center;
-        
-        margin-left: 5%;
-    }
+#menu a:hover {
+    color: #cccccc;
+}
 
-    #principal button {
-        margin-right: 5%;
-        width: 80px;
-        height: 39px;
-        font-weight: 600;
-        font-size: 20px;
-        background-color: var(--secondary-color);
-        border: none;
-        border-radius: 5px;
-        box-shadow: 3px 2px 4px #0C70F2;
-        cursor: pointer;
-    }
+#menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
 
-    #principal button:hover {
-        background-color: #1f69ca;
-    }
+    margin-left: 5%;
 
-/* Seção Principal  */
+}
+
+#principal button {
+    margin-right: 5%;
+    width: 80px;
+    height: 39px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 2px 4px #0C70F2;
+    cursor: pointer;
+}
+
+#principal button:hover {
+    background-color: #1f69ca;
+}
+
+/* Main Section */
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin: 100px 0;
+    margin: 100px auto;
+    width: 100%;
 }
 
-    header h1{
-        text-transform: uppercase;
-        font-size: 80px;
-        font-weight: 800;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+header h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-    header h2{
-        text-align: center;
-        font-size: 40px;
+header h2 {
+    text-align: center;
+    font-size: 40px;
+    width: 900px;
+    margin-bottom: 100px;
+    font-weight: 400;
+}
 
-        margin-bottom: 100px;
-        font-weight: 400;
-    }
-
-    header .invert {
-        background-color: black;
-        padding: 2px;
-    }
+header .invert {
+    background-color: black;
+    padding: 2px;
+}
 
 /* Formulario */
 form {
     font-size: 30px;
     font-weight: 600;
-    margin:100px 0 150px 0;
+    margin: 100px 0 150px 0;
+    width: 600px;
 }
-    .form-group {
-        display: flex;
-        flex-direction: column;
-        margin: 10px 0;
-        width: 600px;
-    }
 
-        .form-group input {
-            border-radius: 10px;
-            border: none;
-            height: 30px;
-            font-size: 20px;
-            padding: 10px;
-            color: var(--primary-color);
-        }
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
 
-        .form-group input::placeholder {
-            color: var(--placeholder-color, 0.5);
-        }
+.form-group input {
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    font-size: 20px;
+    padding: 10px;
+    color: var(--primary-color);
+}
 
-        .form-group label {
-            margin: 10px 0;
-        }
+.form-group input::placeholder {
+    color: var(--placeholder-color, 0.5);
+}
 
-        .checkbox-items {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+.form-group label {
+    margin: 10px 0;
+}
 
-            .checkbox-items label {
-                font-size: 25px;
-            }
+.checkbox-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
-            input[type="checkbox"] {
-                transform: scale(1.7);
-            }
+.checkbox-items div {
+    display: flex;
+    align-items: center;
 
-        input[type="submit"] {
-            background-color: var(--secondary-color);
-            width: 100%;
-            height: 56px;
-            font-size: 32px;
-            font-weight: 600;
-            border: none;
-            border-radius: 10px;
-            margin-top: 100px;
-            box-shadow: 0 6px 4px rgba(12,112,242,0.25);
-            cursor: pointer;
-        }
+}
 
-            input[type="submit"]:hover {
-                background-color: #1f69ca;
-            }
+.checkbox-items label {
+    font-size: 25px;
+}
 
-/* Footer */
+input[type="checkbox"] {
+    transform: scale(1.7);
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 56px;
+    font-size: 32px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    margin-top: 100px;
+    box-shadow: 0 6px 4px rgba(12, 112, 242, 0.25);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1f69ca;
+}
+
+/* Footer Section */
 footer {
     width: 100%;
     background-color: var(--secondary-color);
-    padding: 20px;
+    padding: 20px 0;
 }
 
-    footer .linha1 {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-        footer ul,
-        footer h5,
-        footer .linha2,
-        footer .endereco {
-            list-style: none;
-            text-align: center;
-        }
-
-        footer ul li {
-            font-weight: 600;
-            font-size: 18px;
-            margin: 20px 0;
-        }
-
-            footer a:hover {
-                color: #bababa;
-            }
-
-        footer nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 330px;
-        }
-    
-        footer h5 {
-            font-size: 20px;
-            font-weight: 800;
-            border-radius: 10px;
-            background-color: var(--primary-color);
-            padding: 10px;
-            margin: 20px 0 10px 0;
-        }
-
-        footer .endereco {
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 24px;
-            width: 28%;
-        }
-
-    footer .linha2 {
-        font-size: 18px;
-        font-weight: 600;
-        margin: 15px 0;
-    }
-
-    /* Define a estilização para o primeiro filho "a" de footer .linha2 */
-    footer .linha2 a:first-child {
-        border-right: 3px solid #fff;
-        padding-right: 5px;
-    }
-
-/* MEDIA QUERY */
-@media only screen and (max-width:1153px) {
-    
-    #menu {
-        width: 70%;
-        margin-left: 1%;
-    }   
+footer .linha1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-@media only screen and (max-width:823px) {
-    
-    #principal,
-    #menu {
-       flex-direction: column;
-    }
+footer ul,
+footer h5,
+footer .linha2,
+footer .endereco {
+    list-style: none;
+    text-align: center;
+}
 
-    #principal {
-        height: 170px;
-        padding-top: 10px;
-        line-height: 40px;
-    }
+footer ul li {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px 0;
+}
 
-    #principal button {
-        align-items: center;
-        justify-content: center;
-        margin: 15px 0;
-    }
+footer a:hover {
+    color: #bababa;
+}
 
-    footer .linha1 {
-        flex-direction: column;
-    }
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+}
 
-    footer .linha2 {
-        margin: 50px 0 5px 0;
-    }
+footer h5 {
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin: 20px 0 10px 0;
 
-    footer .endereco {
-        width: 90%;
-    }
+}
 
+footer .endereco {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    width: 28%;
+}
 
+footer .linha2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+footer .linha2 a:first-child {
+    border-right: 3px solid #fff;
+    padding-right: 5px;
 }

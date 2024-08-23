@@ -1,0 +1,141 @@
+
+/* Ajustes para telas com largura máxima de 1153px */
+@media only screen and (max-width:1153px) {
+    #menu {
+        width: 70%;
+        margin-left: 1%;
+    }
+
+    header h2 {
+        width: 800px;
+    }
+}
+
+/* Ajustes para telas com largura máxima de 823px */
+@media only screen and (max-width:823px) {
+    body {
+        background: linear-gradient(180deg, #0C70F2
+        21.35%, var(--primary-color) 25.84%), var(--primary-color);
+        background-repeat: no-repeat;
+    }
+    
+    #principal,
+    #menu {
+       flex-direction: column;
+    }
+
+    #principal {
+        height: 170px;
+        padding-top: 10px;
+        line-height: 40px;
+    }
+
+    #principal button {
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0;
+    }
+
+    header h2 {
+        font-size: 30px;
+        line-height: 40px;
+        width: 98%;
+    }
+
+    footer .linha1 {
+        flex-direction: column;
+    }
+
+    footer .linha2 {
+        margin: 50px 0 5px 0;
+    }
+
+    footer .endereco {
+        width: 90%;
+    }
+}
+
+/* Ajustes para telas com largura máxima de 655px */
+@media only screen and (max-width:655px) {
+    header h1 {
+        font-size: 60px;
+    }
+
+    header h2 {
+        font-size: 30px;
+        line-height: 40px;
+        width: 98%;
+    }
+
+    section {
+        margin: 50px auto;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0 20px 0;
+    }
+
+    .form-group {
+        width: 90%;
+    }
+
+    .form-group label {
+        font-size: 20px;
+    }
+
+    .form-group input {
+        height: 24px;
+        font-size: 18px;
+    }
+
+     .checkbox-items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .checkbox-items div {
+        display: flex;
+        align-items: center;
+        }
+
+    input[type="checkbox"] {
+        transform: scale(1.5);
+        flex-direction: row;
+        margin-right: 10px;
+    }
+
+    input[type="submit"] {
+        width: 90%;
+        height: 40px;
+        margin-top: 50px;
+        font-size: 24px;
+    }
+}
+
+/* Ajustes para telas com largura máxima de 430px */
+@media only screen and (max-width:430px) {
+    body {
+        background: linear-gradient(180deg, #0C70F2
+    10.35%, var(--primary-color) 20.84%), var(--primary-color);
+    }
+
+    #menu {
+        width: 98%;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header h2 {
+        font-size: 20px;
+        line-height: 28px;
+        width: 98%;
+        margin-bottom: 20px;
+    }
+}
