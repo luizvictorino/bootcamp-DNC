@@ -16,13 +16,13 @@
 
 body {
     background: linear-gradient(180deg, #0C70F2
-    19.91%, var(--primary-color) 24.84%), var(--primary-color);
+    21.35%, var(--primary-color) 33.84%), var(--primary-color);
     background-repeat: no-repeat;
 }
 
 /* Seção menu */
 #principal {
-    width: 100%;
+    width: 100vw;
     height: 100px;
     background-color: var(--primary-color);
 
@@ -43,7 +43,7 @@ body {
 
     #menu {
         display: flex;
-        width: 45%;
+        width: 50%;
         justify-content: space-around;
         align-items: center;
         
@@ -58,9 +58,13 @@ body {
         font-size: 20px;
         background-color: var(--secondary-color);
         border: none;
-
+        border-radius: 5px;
         box-shadow: 3px 2px 4px #0C70F2;
         cursor: pointer;
+    }
+
+    #principal button:hover {
+        background-color: #1f69ca;
     }
 
 /* Seção Principal  */
@@ -77,15 +81,15 @@ section {
         font-size: 80px;
         font-weight: 800;
         text-align: center;
-
         margin-bottom: 20px;
     }
 
     header h2{
         text-align: center;
         font-size: 40px;
-        line-height: 55px;
+
         margin-bottom: 100px;
+        font-weight: 400;
     }
 
     header .invert {
@@ -97,6 +101,7 @@ section {
 form {
     font-size: 30px;
     font-weight: 600;
+    margin:100px 0 150px 0;
 }
     .form-group {
         display: flex;
@@ -149,10 +154,15 @@ form {
             cursor: pointer;
         }
 
+            input[type="submit"]:hover {
+                background-color: #1f69ca;
+            }
+
 /* Footer */
 footer {
     width: 100%;
     background-color: var(--secondary-color);
+    padding: 20px;
 }
 
     footer .linha1 {
@@ -162,16 +172,97 @@ footer {
     }
 
         footer ul,
-        footer .linha1 h5,
-        footer .linha2{
+        footer h5,
+        footer .linha2,
+        footer .endereco {
             list-style: none;
             text-align: center;
         }
 
-        /* footer ul li {
+        footer ul li {
+            font-weight: 600;
+            font-size: 18px;
+            margin: 20px 0;
+        }
 
+            footer a:hover {
+                color: #bababa;
+            }
+
+        footer nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 330px;
+        }
+    
+        footer h5 {
+            font-size: 20px;
+            font-weight: 800;
+            border-radius: 10px;
+            background-color: var(--primary-color);
+            padding: 10px;
+            margin: 20px 0 10px 0;
+        }
+
+        footer .endereco {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            width: 28%;
         }
 
     footer .linha2 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 15px 0;
+    }
 
-    } */
+    /* Define a estilização para o primeiro filho "a" de footer .linha2 */
+    footer .linha2 a:first-child {
+        border-right: 3px solid #fff;
+        padding-right: 5px;
+    }
+
+/* MEDIA QUERY */
+@media only screen and (max-width:1153px) {
+    
+    #menu {
+        width: 70%;
+        margin-left: 1%;
+    }   
+}
+
+@media only screen and (max-width:823px) {
+    
+    #principal,
+    #menu {
+       flex-direction: column;
+    }
+
+    #principal {
+        height: 170px;
+        padding-top: 10px;
+        line-height: 40px;
+    }
+
+    #principal button {
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0;
+    }
+
+    footer .linha1 {
+        flex-direction: column;
+    }
+
+    footer .linha2 {
+        margin: 50px 0 5px 0;
+    }
+
+    footer .endereco {
+        width: 90%;
+    }
+
+
+}
